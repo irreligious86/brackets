@@ -1,8 +1,8 @@
 module.exports = function check(str, bracketsConfig) {
-    var stack = [];
-    for (var i = 0; i <= str.length - 1; i++) {
-        var find = false;
-        for (var j = 0; j < bracketsConfig.length; j++) {
+    let stack = [];
+    for (let i = 0; i <= str.length - 1; i++) {
+        let find = false;
+        for (let j = 0; j < bracketsConfig.length; j++) {
             if (str[i] === bracketsConfig[j][0]) {
                 find = true;
                 if (bracketsConfig[j][0] === bracketsConfig[j][1]) {
